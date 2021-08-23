@@ -8,6 +8,7 @@ function Firstprofile({ firstProfile, setFirstProfile }) {
   const region = "us";
 
   const allStatsURL = `https://ow-api.com/v1/stats/${platform}/${region}/${profileName}/complete`;
+  
   const getData = async () => {
     const res = await axios.get(allStatsURL);
 
@@ -33,6 +34,7 @@ const handleChangeXbox = (e) => {
 }
 
   return (
+    <div>
     <div className= "forms">
       <form onSubmit={handleSubmit}>
         <label for="pro2search">Profile 1: </label>
@@ -44,14 +46,16 @@ const handleChangeXbox = (e) => {
           value={profileName}
         />
       </form>
+      
       <div className = "buttons-container">
 <button id= "pc" className= "buttons" onClick = {handleChangePc} > PC </button>
 <button id = "psn" className= "buttons" onClick = {handleChangePsn}> PSN</button>
 <button id = "xbox" className= "buttons" onClick = {handleChangeXbox} > XBOX </button>
+</div>
+</div>
+      <Firstresult firstProfile={firstProfile} loading={loading} setFirstProfile={setFirstProfile}/>
       
-      </div>
-      <Firstresult firstProfile={firstProfile} loading={loading} />
-    </div>
+   </div>
   );
 }
 

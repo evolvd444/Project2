@@ -34,6 +34,7 @@ function Secondprofile({ secondProfile, setSecondProfile }) {
       setPlatform("xbox")
     }
   return (
+      <div>
     <div className = "forms">
       <form onSubmit={handleSubmit}>
         <label for="pro2search">Profile 2: </label>
@@ -45,11 +46,12 @@ function Secondprofile({ secondProfile, setSecondProfile }) {
           value={profileName}
         />
       </form>
+      
       <div className = "buttons-container">
     <button className = "buttons" onClick = {handleChangePc} > PC </button>
     <button className = "buttons" onClick = {handleChangePsn}> PSN</button>
     <button className = "buttons" onClick = {handleChangeXbox} > XBOX </button>
-      
+    </div>
       </div>
       <Secondresult secondProfile={secondProfile} loading={loading} />
     </div>

@@ -1,10 +1,12 @@
-import React, {useState, useEffect}  from 'react';
+import React from 'react';
 
 function Secondresult({secondProfile, loading}) {
     if (loading){
         return null
+    }else if (secondProfile.private === true) {
+        alert("This Profile is private... which means..This dude is scared")
+    window.location.reload()
     }else{
-          console.log(secondProfile)
               return (
             <div className= "profile-container">
             <div className= "second-profile">

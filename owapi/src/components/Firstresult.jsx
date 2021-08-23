@@ -1,11 +1,16 @@
 import React, {useState, useEffect} from 'react';
+import Firstprofile from './Firstprofile';
 
-function Firstresult({firstProfile, loading}) {
+function Firstresult({firstProfile, loading, setFirstProfile}) {
    
 if (loading){
     return null
-}else{
-      console.log(firstProfile)
+}else if (firstProfile.private === true) {
+        alert("This Profile is private... which means..This dude is scared")
+    window.location.reload()
+    console.log(firstProfile)
+    }else {
+      
           return (
               <div className= "profile-container">
             <div className= "second-profile">
@@ -25,8 +30,11 @@ if (loading){
         </div>
         </div>
     );
+        } 
     }
-}
+
+
+
 
 
 export default Firstresult;

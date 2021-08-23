@@ -2,10 +2,10 @@
 
 .App {
   background-image: url(https://wallpaperaccess.com/full/1820131.jpg);
-  width: 100vw;
-  height: 100vh;
+  width: 100vw auto;
+  height: 100vh auto;
   
-  background-size: cover ;
+  background-size: cover;
   text-align: center;
   z-index: 1;
   
@@ -28,7 +28,7 @@
 
 
 .profile-container {
-margin: 2rem auto;
+margin: 1rem auto;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -62,7 +62,7 @@ display: flex;
 
 .rank-icon {
   width: 7rem;
-  length: 7rem;
+  height: 7rem;
 }
 
 .owlogo {
