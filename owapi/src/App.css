@@ -1,0 +1,92 @@
+
+
+.App {
+  background-image: url(https://wallpaperaccess.com/full/1820131.jpg);
+  width: 100vw;
+  height: 100vh;
+  
+  background-size: cover ;
+  text-align: center;
+  z-index: 1;
+  
+}
+
+#first {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover ;
+  opacity: .8;
+  
+
+}
+
+/* #top-back {
+ width: 10px;
+ height: 10px;
+ 
+} */
+
+
+.profile-container {
+margin: 2rem auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+
+
+}
+.second-profile {
+  background-color: rgba(0,0,0, 0.4);
+  color: aliceblue;
+  z-index: 2;
+  width: 55vw auto;
+  height: 5vh auto;
+  margin:1rem auto;
+
+  }
+
+.buttons-container {
+margin:1rem 0;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.buttons {
+  
+  margin:.2rem 0.5rem;
+display: flex;
+
+}
+
+.rank-icon {
+  width: 7rem;
+  length: 7rem;
+}
+
+.owlogo {
+  padding-top: 1rem;
+  width: 35rem;
+  height: 15rem;
+  opacity: .92;
+  box-shadow: blueviolet;
+}
+.forms {
+  background-color: rgba(0,0,0, 0.4);
+  color: aliceblue;
+  z-index: 2;
+  width: 22%;
+  height: 7vh auto;
+  margin:1rem auto;
+}
+
+.welcome {
+
+  background-color: rgba(0,0,0, 0.3);
+  color: aliceblue;
+  z-index: 2;
+  width: 45%;
+  height: 7vh auto;
+  margin:1rem auto;
+}
